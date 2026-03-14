@@ -1,18 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Proyecto</title>
+<meta charset="UTF-8">
+<title>Bienvenida</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    overflow:hidden;
+}
+
+/* Fondo animado */
+.fondo{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: linear-gradient(270deg,#87CEFA,#B0E0E6,#00BFFF);
+    background-size:600% 600%;
+    animation: moverFondo 10s ease infinite;
+    z-index:-1;
+}
+
+@keyframes moverFondo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Encabezado */
+header{
+    background:rgba(0,191,255,0.8);
+    color:white;
+    padding:20px;
+}
+
+/* Contenedor de cards */
+.contenedor{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:50px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#00BFFF;
+}
+
+footer{
+    margin-top:40px;
+    padding:15px;
+    background:rgba(0,191,255,0.8);
+    color:white;
+}
+
+</style>
 </head>
-<body style="background-color:#e6f7ff; text-align:center; font-family:Arial;">
 
-    <h1 style="color:#00bfff; margin-top:100px;">
-        ¡Este es nuestro primer proyecto!
-    </h1>
+<body>
 
-    <p style="color:#1e90ff; font-size:20px;">
-        Nos alegra tenerte aquí. Esperamos que disfrutes tu experiencia.
-    </p>
+<div class="fondo"></div>
+
+<header>
+<h1>¡Bienvenido a nuestra página!</h1>
+<p>Nos alegra que estés aquí</p>
+</header>
+
+<div class="contenedor">
+
+<div class="card">
+<h3>Información</h3>
+<p>Aquí encontrarás contenido interesante.</p>
+</div>
+
+<div class="card">
+<h3>Servicios</h3>
+<p>Ofrecemos soluciones para ayudarte.</p>
+</div>
+
+<div class="card">
+<h3>Contacto</h3>
+<p>Puedes comunicarte con nosotros cuando quieras.</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Página de ejemplo</p>
+</footer>
 
 </body>
 </html>
-
